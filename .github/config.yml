@@ -1,0 +1,13 @@
+title: Github config file
+description: Test of Github config file
+steps:
+  - title: Create a branch
+    description: Create a branch for introducing new changes.
+  event: create
+  link: '{{ repoUrl }}/issues/2'
+  actions:
+  - type: respond
+    issue: Your first contribution
+    with: 04_commit-something.md
+    data:
+      thePayload: '%payload%'
